@@ -23,6 +23,8 @@ install:
 script:
   - source /opt/ros/$CI_ROS_DISTRO/setup.bash
   - mkdir -p $CATKIN_WS_SRC
+  - cd $CATKIN_WS_SRC
+  - git clone https://github.com/ros-industrial/ros_canopen.git
   - ln -s $TRAVIS_BUILD_DIR $CATKIN_WS_SRC
   - /bin/bash -x $TRAVIS_BUILD_DIR/$BUILD_SCRIPT
   - catkin_test_results
