@@ -11,6 +11,7 @@ env:
     - CI_ROS_DISTRO="indigo"
   matrix:
     - BUILD_SCRIPT="test_catkin_make.sh"
+    - BUILD_SCRIPT="test_catkin_make_isolated.sh"
     - BUILD_SCRIPT="test_catkin_tools.sh"
 install:
   - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
