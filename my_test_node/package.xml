@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>my_test_node</name>
+  <version>0.0.1</version>
+  <description>Includes my_test_node</description>
+
+  <maintainer email="mathias.luedtke@ipa.fraunhofer.de">Mathias Lüdtke</maintainer>
+  <author email="mathias.luedtke@ipa.fraunhofer.de">Mathias Lüdtke</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
