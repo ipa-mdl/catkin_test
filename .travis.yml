@@ -26,5 +26,6 @@ script:
   - cd $CATKIN_WS_SRC
   - git clone https://github.com/ros-industrial/ros_canopen.git
   - ln -s $TRAVIS_BUILD_DIR $CATKIN_WS_SRC
+  - rosdep install --from-paths ./ -i -y --rosdistro $CI_ROS_DISTRO
   - /bin/bash -x $TRAVIS_BUILD_DIR/$BUILD_SCRIPT
   - catkin_test_results
