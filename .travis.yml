@@ -13,6 +13,7 @@ env:
     - BUILD_SCRIPT="test_catkin_make.sh"
     - BUILD_SCRIPT="test_catkin_make_isolated.sh"
     - BUILD_SCRIPT="test_catkin_tools.sh"
+    - BUILD_SCRIPT="test_catkin_tools_pre_0.4.0.sh"
 install:
   - sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
   - wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
