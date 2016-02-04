@@ -2,7 +2,7 @@
 set -x
 
 sudo apt-get -y install python-pip
-pip install empy sphinx_rtd_theme nose coverage flake8 mock --upgrade
+pip install empy sphinx_rtd_theme nose coverage flake8 mock trollius --upgrade
 cd
 git clone https://github.com/catkin/catkin_tools.git -b pre-0.4.0-linked-devel
 cd catkin_tools
