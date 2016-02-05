@@ -2,8 +2,8 @@
 set -x
 
 sudo apt-get -y install python-pip
-pip install setuptools argparse catkin-pkg distribute PyYAML psutil trollius
-pip install git+https://github.com/osrf/osrf_pycommon.gitcd
+sudo pip install setuptools argparse catkin-pkg distribute PyYAML psutil trollius
+sudo pip install git+https://github.com/osrf/osrf_pycommon.gitcd
 git clone https://github.com/catkin/catkin_tools.git -b pre-0.4.0-linked-devel
 cd catkin_tools
 python setup.py build
